@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Courses</title>
+    <link rel="stylesheet" href="jss/style.css">
+</head>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+ </head>
+<body>
+        <div id="ex1" class="modal">
+                <p>Thanks for clicking. That felt good.</p>
+                <a href="#" rel="modal:close">Close</a>
+              </div>
+
+    <nav>
+        <div class="logo">
+            <img src="ress/logo.png" alt="logo" width="60">
+        </div>
+
+        <ul class="navbar-links">
+            <li class="nav-item">
+                <a href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="Courses.html">Courses</a>
+            </li>
+            <li class="nav-item">
+                <a href="Contact.html">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="header">
+        <h1>courses</h1>
+    </div>
+<br>
+<center>
+
+   <div class="images"> 
+    <div class="image-hover" id="image1">
+    <a href="#ex1" rel="modal:open">
+        <button class="bt">View more</button>
+    </a>
+    </div>
+    <div class="images"> 
+    <div class="image-hover" id="image2">
+    <a href="#ex1" rel="modal:open">
+        <button class="bt">View more</button>
+            </a>
+            </div>
+    <div class="images"> 
+    <div class="image-hover" id="image3">
+    <a href="#ex1" rel="modal:open">
+        <button class="bt">View more</button>
+                    </a>
+            </div>
+   </div>
+</center>
+
+                <form class="courses-form">
+
+        <h4>Feedback</h4>
+        <div class="buttons">
+            <button type="button" onclick="bold()">B</button>
+            <button type="button" onclick="italic()">I</button>
+            <button type="button" onclick="underline()">Underline</button>
+            <select id="selectSize">
+                <option>20px</option>
+                <option>30px</option>
+                <option>40px</option>
+                <option>100px</option>
+            </select>
+            <select id="selectFamily">
+                <option>arial</option>
+                <option>Verdana</option>
+                <option>Geneva</option>
+            </select>
+        </div>
+        <textarea rows="5" cols="50" id="textArea"></textarea>
+    </form>
+</body>
+<script src="js/main.js"></script>
+
+</html>
